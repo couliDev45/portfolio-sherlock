@@ -1,0 +1,87 @@
+body{
+    background-color: #f8fafc;
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    margin: 0;
+}
+h1{
+    color: #2563eb;
+    text-align: center;
+}
+header{
+    background-color: #2563eb;
+    color: white;
+    text-align: center;padding: 20px;
+}
+h1{
+    color: azure;
+}
+nav{background-color: #7c3aed;
+    text-align: center;
+    padding: 15px;
+}
+nav a{
+    color: white;
+    margin: 15px;
+    font-weight: bold;
+}
+main{
+    padding: 20px;
+}
+section{
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+img{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+footer{
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+    .presentation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    @media (max: width 600px;){
+        .presentation{
+            flex-direction: column;
+        }
+    }
+}
+.presentation img{
+    width: 200px;
+    border-radius: 50%;
+}
+.competences{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,02);
+    width: 200px;
+    @media (max: width 600px;){
+        .competences{
+            flex-direction: column;
+        }
+    }
+}
+.card{
+    transition: transform 0.3s ease;
+}
+.card:hover{
+    background-color: #2563eb;
+    color: #9bbaff;
+    transform: translateY(-5px)
+}
